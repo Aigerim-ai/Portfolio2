@@ -1,0 +1,58 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  line-height: 1.65;
+  --theme-background: #fff;
+  --theme-background-dan: #fff;
+  --theme-color: #272341;
+  --toggle-border: #ddd;
+  --toggle-gradient: linear-gradient(#39598A, #79D7ED);
+  --sun-icon-position: translateY(0);
+  --moon-icon-position: translateY(-100px);
+  background-color: var(--theme-background);
+  @include theme-transition;
+}
+
+body.dark {
+  --theme-background: #18191a;
+  --theme-background-dan: #282c35;
+  --theme-color: #ddd;
+  --toggle-border: #6B8096;
+  --toggle-gradient: linear-gradient(#091236, #1E215D);
+  --sun-icon-position: translateY(100px);
+  --moon-icon-position: translateY(0);
+  background-color: var(--theme-background);
+  @include theme-transition;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: $primary-color;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  border-radius: 6px;
+  border: 2px solid var(--dark);
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
