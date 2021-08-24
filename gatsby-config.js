@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Aigerim Suleimenova | Web Developer`,
     author: `Aigerim Suleimenova`,
-    description: `Stefan Pop Fullstack Web Developer portfolio`,
+    description: `Aigerim Suleimenova Fullstack Web Developer portfolio`,
     siteUrl: `https://www.stefanpop.dev`,
   },
   plugins: [
